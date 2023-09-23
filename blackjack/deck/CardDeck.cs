@@ -31,15 +31,19 @@ namespace blackjack.deck
             randomizedeck();
         }
 
-        public void drawCard()
+        public PlayingCard drawCard()
         {
             if (deck.Count == 0)
             {
                 shuffle();
             }
-            discardPile.Add(deck[0]);
-            deck.RemoveAt(0);
-        }
+            else {
+				discardPile.Add(deck[0]);
+				deck.RemoveAt(0);
+			}
+			PlayingCard temp = deck[0];
+			return temp;
+		}
 
         public void populateDeck()
         {
