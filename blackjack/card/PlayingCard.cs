@@ -24,7 +24,7 @@ namespace blackjack.card
 
         public void printCard()
         {
-            Console.Write($"{cardValue} of {cardSuit} ");
+            Console.Write($"[ {cardValue} of {cardSuit} ] ");
         }
     }
 }

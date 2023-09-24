@@ -28,6 +28,7 @@ namespace blackjack.player {
 
 		public void addtoHand(PlayingCard card) {
 			playerHand.Add(card);
+			calculateScore();
 		}
 
 		public void displayHand() {
