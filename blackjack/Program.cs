@@ -1,11 +1,12 @@
 ﻿using blackjack.deck;
+using blackjack.gameControl;
 
 namespace blackjack
 {
     internal class Program {
 		static void Main(string[] args) {
-			CardDeck deck = new CardDeck();
-			deck.printDeck();
+			GameControl gameControl = new GameControl();
+			gameControl.run();
 		}
 	}
 }

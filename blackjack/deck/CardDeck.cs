@@ -37,11 +37,9 @@ namespace blackjack.deck
             {
                 shuffle();
             }
-            else {
-				discardPile.Add(deck[0]);
-				deck.RemoveAt(0);
-			}
+			discardPile.Add(deck[0]);
 			PlayingCard temp = deck[0];
+			deck.RemoveAt(0);
 			return temp;
 		}
 

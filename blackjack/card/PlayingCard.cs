@@ -8,18 +8,23 @@ namespace blackjack.card
 {
     public class PlayingCard
     {
+        public int value;
         public Value cardValue;
         public Suit cardSuit;
 
         public PlayingCard(int inputSuit, int inputValue)
         {
+            if (inputValue > 10 && inputValue < 14) { value = 10; }
+            else if (inputValue == 1) { value = 11; }
+            else { value = inputValue; }
+
             cardSuit = (Suit)inputSuit;
             cardValue = (Value)inputValue;
         }
 
         public void printCard()
         {
-            Console.WriteLine($"{cardValue} of {cardSuit}");
+            Console.Write($"{cardValue} of {cardSuit} ");
         }
     }
 }
