@@ -52,6 +52,7 @@ namespace blackjack.gameControl {
 						}
 						break;
 					}
+
 			}
 		}
 

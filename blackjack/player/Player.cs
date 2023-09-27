@@ -27,6 +27,7 @@ namespace blackjack.player {
 		}
 
 		public void addtoHand(PlayingCard card) {
+			if(score +  card.value > 21) { card.value = 1; }
 			playerHand.Add(card);
 			calculateScore();
 		}
