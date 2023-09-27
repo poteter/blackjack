@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using blackjack.card;
+using blackjack.UI;
 
 namespace blackjack.player {
 	internal class Dealer {
@@ -33,7 +34,8 @@ namespace blackjack.player {
 		}
 
 		public void displayHand() {
-            Console.Write("[ Hidden Card ] ");
+            UiColors colors = new UiColors();
+			colors.colorWriteRed("[ Hidden Card ] ");
             for (int i = 1; i < dealerHand.Count; i++) {
 				dealerHand[i].printCard();
 			}

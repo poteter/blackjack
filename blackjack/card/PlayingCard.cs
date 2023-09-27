@@ -1,4 +1,5 @@
-﻿using System;
+﻿using blackjack.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,8 @@ namespace blackjack.card
 
         public void printCard()
         {
-            Console.Write($"[ {cardValue} of {cardSuit} ] ");
+            UiColors colors = new UiColors();
+            colors.colorWriteRed($"[ {cardValue} of {cardSuit} ] ");
         }
     }
 }
