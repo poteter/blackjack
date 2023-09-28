@@ -92,7 +92,6 @@ namespace blackjack.gameControl {
 		public void printPlayerDialog() {
 			Console.Write($"The dealer has ");
 			dealer.displayHand();
-            Console.WriteLine("\nAnd a score of " + dealer.score);
             Console.WriteLine("\n\n\n");
 			Console.Write("The player has ");
 			player.displayHand();
