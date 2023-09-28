@@ -18,5 +18,11 @@ namespace blackjack.UI {
 			Console.Write(text);
 			Console.ResetColor();
 		}
+
+		public void colorWriteBlue(string text) {
+			Console.ForegroundColor = ConsoleColor.Blue;
+			Console.Write(text);
+			Console.ResetColor();
+		}
 	}
 }

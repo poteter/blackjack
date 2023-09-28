@@ -9,7 +9,8 @@ namespace blackjack.card
 {
     public class PlayingCard
     {
-        public int value;
+		UiColors colors = new UiColors();
+		public int value;
         public Value cardValue;
         public Suit cardSuit;
 
@@ -25,7 +26,6 @@ namespace blackjack.card
 
         public void printCard()
         {
-            UiColors colors = new UiColors();
             colors.colorWriteRed($"[ {cardValue} of {cardSuit} ] ");
         }
     }

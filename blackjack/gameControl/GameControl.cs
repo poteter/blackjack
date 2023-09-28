@@ -72,7 +72,7 @@ namespace blackjack.gameControl {
 					gameRunning = false;
                 }
 				else if(score <= player.score) {
-					colors.colorWriteGreen($"The dealer has won with a score of {dealer.score} below the players score of {player.score}");
+					colors.colorWriteGreen($"The dealer has won with a score of {dealer.score} equals to or below the players score of {player.score}");
 					gameRunning = false;
                 }
 			}
@@ -97,8 +97,10 @@ namespace blackjack.gameControl {
 			Console.Write("The player has ");
 			player.displayHand();
 			Console.WriteLine("\nAnd a score of " + player.score);
-			Console.Write("\nDraw new card? (y/n) > ");
-		}
+			Console.Write("\nDraw new card? ");
+			colors.colorWriteBlue("(y/n)");
+            Console.Write(" > ");
+        }
 
 	}
 }
