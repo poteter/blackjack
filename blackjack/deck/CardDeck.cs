@@ -20,10 +20,6 @@ namespace blackjack.deck
             randomizedeck();
         }
 
-        public void discard() { 
-
-        }
-
         public void shuffle() {
             for(int i = 0; i < 52; i++) {
                 deck[i] = discardPile[i];

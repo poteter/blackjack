@@ -32,6 +32,10 @@ namespace blackjack.gameControl {
 			if(player.score == 21) {
                 colors.colorWriteRed("Blackjack - player wins");
             }
+			else if(player.score > 21) {
+				colors.colorWriteRed($"Player loses with a score of {player.calculateScore}");
+				
+			}
 			else {
 				while (gameRunning) {
 					Console.Clear();
